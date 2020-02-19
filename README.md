@@ -38,6 +38,10 @@ Learning Snippets about Apache Spark and Scala
 
 - MacOS
   + Step 1: Install Spark
+  + Step 2: Install the Scala IDE
+  + Step 3: Test it out!
+
+__Step 1: Install Spark__
 Method A: By Hand
 The best setup instructions for Spark on MacOS are at the following link:
 
@@ -50,10 +54,10 @@ An alternative on MacOS is using a tool called Homebrew to install Java, Scala, 
 
 Step by step instructions are at https://www.tutorialkart.com/apache-spark/how-to-install-spark-on-mac-os/
 
-   + Step 2: Install the Scala IDE
+__Step 2: Install the Scala IDE__
 Install the Scala IDE from http://scala-org/download/sdk.html
 
-   + Step 3: Test it out!
+__Step 3: Test it out!__
 cd to the directory apache-spark was installed to and then ls to get a directory listing.
 Look for a text file we can play with, like README.md or CHANGES.txt
 Enter spark-shell
