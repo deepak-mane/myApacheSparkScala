@@ -34,3 +34,45 @@ Learning Snippets about Apache Spark and Scala
     %SPARK_HOME%\bin
     %JAVA_HOME%\bin
     ```
+
+
+- MacOS
+  + Step 1: Install Spark
+Method A: By Hand
+The best setup instructions for Spark on MacOS are at the following link:
+
+https://medium.com/luckspark/installing-spark-2-3-0-on-macos-high-sierra-276a127b8b85
+
+Spark 2.3.0 is no longer available, but the same process should work with 2.4.4 or 3.0.0.
+
+Method B: Using Homebrew
+An alternative on MacOS is using a tool called Homebrew to install Java, Scala, and Spark – but first you need to install Homebrew itself.
+
+Step by step instructions are at https://www.tutorialkart.com/apache-spark/how-to-install-spark-on-mac-os/
+
+  + Step 2: Install the Scala IDE
+Install the Scala IDE from http://scala-org/download/sdk.html
+
+  + Step 3: Test it out!
+cd to the directory apache-spark was installed to and then ls to get a directory listing.
+Look for a text file we can play with, like README.md or CHANGES.txt
+Enter spark-shell
+At this point you should have a scala> prompt. If not, double check the steps above.
+Enter val rdd = sc.textFile(“README.md”) (or whatever text file you’ve found) Enter rdd.count()
+You should get a count of the number of lines in that file! Congratulations, you just ran your first Spark program!
+Hit control-D to exit the spark shell, and close the console window
+You’ve got everything set up! Hooray!
+
+- Linux
+1. Install Java 8, Scala, and Spark according to the particulars of your specific OS. A good starting point is http://www.tutorialspoint.com/apache_spark/apache_spark_installation.htm (be sure to install Spark 3.0.0 or 2.4.4 depending on which version of the course you’re taking)
+1. Install the Scala IDE from http://scala–org/download/sdk.html
+1. Test it out!
+1. cd to the directory apache-spark was installed to and then ls to get a directory listing.
+1. Look for a text file we can play with, like README.md or CHANGES.txt
+1. Enter spark-shell
+1. At this point you should have a scala> prompt. If not, double check the steps above.
+1. Enter val rdd = sc.textFile(“README.md”) (or whatever text file you’ve found) Enter rdd.count()
+1. You should get a count of the number of lines in that file! Congratulations, you just ran your first Spark program!
+1. Hit control-D to exit the spark shell, and close the console window
+1. You’ve got everything set up! Hooray!
+
