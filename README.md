@@ -12,15 +12,7 @@ Learning Snippets about Apache Spark and Scala
   1. Create a c:\tmp\hive directory, and cd into c:\winutils\bin, and run winutils.exe chmod 777 c:\tmp\hive
   1. Open the the c:\spark\conf folder, and make sure “File Name Extensions” is checked in the “view” tab of Windows Explorer. Rename the log4j.properties.template file to log4j.properties. Edit this file (using Wordpad or something similar) and change the error level from INFO to ERROR for log4j.rootCategory
   1. Right-click your Windows menu, select Control Panel, System and Security, and then System. Click on “Advanced System Settings” and then the “Environment Variables” button.
-  1. Add the following new USER variables:
-    ```
-    SPARK_HOME c:\spark
-    JAVA_HOME (the path you installed the JDK to in step 1, for example C:\ProgramFiles\Java\jdk1.8.0_101)
-    HADOOP_HOME c:\winutils
-    Add the following paths to your PATH user variable:
-    %SPARK_HOME%\bin
-    %JAVA_HOME%\bin
-    ```
+  1. Add the following new USER variables mentioned below
   1. Close the environment variable screen and the control panels.
   1. Install the latest Scala IDE from http://scala-ide.org/download/sdk.html
   1. Test it out!
@@ -33,3 +25,12 @@ Learning Snippets about Apache Spark and Scala
   1. You should get a count of the number of lines in that file! Congratulations, you just ran your first Spark program!
   1. Hit control-D to exit the spark shell, and close the console window
   1. You’ve got everything set up! Hooray!
+
+    ```
+    SPARK_HOME c:\spark
+    JAVA_HOME (the path you installed the JDK to in step 1, for example C:\ProgramFiles\Java\jdk1.8.0_101)
+    HADOOP_HOME c:\winutils
+    Add the following paths to your PATH user variable:
+    %SPARK_HOME%\bin
+    %JAVA_HOME%\bin
+    ```
